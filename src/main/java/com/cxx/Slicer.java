@@ -44,6 +44,32 @@ public class Slicer {
         return result;
     }
 
+
+    /**
+     * 分组
+     *
+     * @param originalList 分组前的列表
+     * @param limit        每组的最大限制数量
+     * @param <T>
+     * @return
+     */
+    public static <T> List<List<T>> group(List<T> originalList, int limit) {
+        if (limit == 0) {
+            throw new IllegalArgumentException("limit must be greater than zero");
+        }
+        if (originalList.size() == 0) {
+            throw new IllegalArgumentException("originalList is not empty");
+        }
+        List<List<T>> groups = new ArrayList<>(originalList.size());
+        int groupNum = (int) Math.ceil(originalList.size() / (double) limit);
+        for (int i = 0; i < groupNum; i++) {
+            int start = i * limit;
+            int end = start + limit;
+            groups.add(originalList.subList(start, end > originalList.size() ? originalList.size() : end));
+        }
+        return groups;
+    }
+
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         for (int i = 1; i <=17 ; i++) {

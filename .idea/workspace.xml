@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7003afe-2aca-4902-9707-c3fb6c6e864a" name="Default" comment="日志">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/BaseResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java" afterDir="false" />
+    <list default="true" id="f7003afe-2aca-4902-9707-c3fb6c6e864a" name="Default" comment="result统一">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxValidateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateRulesUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Check.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/validate/aspect/ValidatorAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,27 +30,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="24" />
+          <entry key="java" value="32" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="32" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1497" />
-          <entry key="txt" value="4" />
+          <entry key="java" value="1560" />
+          <entry key="txt" value="12" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1497" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="1560" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -56,28 +58,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateRulesUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/aspect/ValidatorAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="7" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -97,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/SortUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/User.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -123,6 +125,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/ResultSupport.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxValidateException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateRulesUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Validator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/validate/aspect/ValidatorAspect.java" />
       </list>
     </option>
   </component>
@@ -189,7 +199,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cxx" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="validate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superboycxx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="superboycxx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cxx" type="462c0819:PsiDirectoryNode" />
+              <item name="validate" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +223,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542544941902" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542546017074" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -359,7 +379,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542525148306</updated>
       <workItem from="1542525150566" duration="11152000" />
-      <workItem from="1542539695377" duration="5220000" />
+      <workItem from="1542539695377" duration="6293000" />
     </task>
     <task id="LOCAL-00001" summary="日志">
       <created>1542542837160</created>
@@ -368,17 +388,24 @@
       <option name="project" value="LOCAL" />
       <updated>1542542837160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="result统一">
+      <created>1542544976454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542544976454</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16372000" />
+    <option name="totallyTimeSpent" value="17445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="992" y="23" width="928" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.046275396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3047404" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -417,21 +444,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="日志" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志" />
+    <MESSAGE value="result统一" />
+    <option name="LAST_COMMIT_MESSAGE" value="result统一" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_151/src.zip!/java/util/Objects.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/MD5.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" selection-start-line="9" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/SortUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -607,16 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -660,13 +668,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="425">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#988#989#0" expanded="true" />
             <element signature="e#1024#1025#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/exception/CxxValidateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/Slicer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/annotation/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/ValidateRulesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/validate/aspect/ValidatorAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
