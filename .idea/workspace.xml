@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7003afe-2aca-4902-9707-c3fb6c6e864a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/AbstractLogFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/AbstractLogUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/BaseLogUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/LogFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/format/CommonFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/format/JsonFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/template/AccessTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/log/template/ErrorMsgTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/util/AppVersionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/util/EnvUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/util/Md5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/util/URIUtils.java" afterDir="false" />
+    <list default="true" id="f7003afe-2aca-4902-9707-c3fb6c6e864a" name="Default" comment="日志">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/BaseResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/superboycxx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/superboycxx.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,25 +28,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="24" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="24" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="829" />
+          <entry key="java" value="1497" />
+          <entry key="txt" value="4" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="829" />
+          <entry key="JAVA" value="1497" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -63,14 +57,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/log/template/AccessTemplate.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="343">
+              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#988#989#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,6 +116,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/log/BaseLogUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/log/template/ErrorMsgTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cxx/log/template/AccessTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/ResultUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/ResultCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/BaseResultCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/util/ResultSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java" />
       </list>
     </option>
   </component>
@@ -176,27 +189,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cxx" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="superboycxx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="superboycxx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cxx" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="format" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="superboycxx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="superboycxx" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cxx" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,7 +203,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542542811086" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542544941902" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -254,7 +247,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cxx.util.*" />
+          <option name="PATTERN" value="com.cxx.result.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -282,7 +275,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cxx.util.*" />
+          <option name="PATTERN" value="com.cxx.result.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,7 +289,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cxx.util.*" />
+          <option name="PATTERN" value="com.cxx.result.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -366,18 +359,26 @@
       <option name="presentableId" value="Default" />
       <updated>1542525148306</updated>
       <workItem from="1542525150566" duration="11152000" />
-      <workItem from="1542539695377" duration="3092000" />
+      <workItem from="1542539695377" duration="5220000" />
     </task>
+    <task id="LOCAL-00001" summary="日志">
+      <created>1542542837160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542542837160</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14244000" />
+    <option name="totallyTimeSpent" value="16372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="992" y="23" width="928" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2697517" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.046275396" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,14 +387,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24559586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.051813472" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.13471502" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.42598686" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -413,6 +414,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_151/src.zip!/java/util/Objects.java" />
@@ -598,6 +603,69 @@
             <element signature="imports" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
             <element signature="e#371#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/BaseResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cxx/result/ResultUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
           </folding>
         </state>
       </provider>
