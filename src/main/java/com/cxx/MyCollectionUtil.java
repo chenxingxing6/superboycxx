@@ -1,5 +1,7 @@
 package com.cxx;
 
+import org.apache.commons.collections.CollectionUtils;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -12,6 +14,28 @@ import java.util.stream.Stream;
  * 集合工具类
  */
 public class MyCollectionUtil {
+
+
+    public static void collectionTest(){
+        CollectionUtils.isEmpty(null);
+        CollectionUtils.isNotEmpty(null);
+        //并集
+        Collection union = CollectionUtils.union(new ArrayList(), new ArrayList());
+        //交集
+        CollectionUtils.intersection(new ArrayList(), new ArrayList());
+        //差集
+        /**
+         * 集合a: {1,2,3,3,4,5}
+         集合b: {3,4,4,5,6,7}
+         CollectionUtils.union(a, b)(并集): {1,2,3,3,4,4,5,6,7}
+         CollectionUtils.intersection(a, b)(交集): {3,4,5}
+         CollectionUtils.disjunction(a, b)(交集的补集): {1,2,3,4,6,7}
+         CollectionUtils.disjunction(b, a)(交集的补集): {1,2,3,4,6,7}
+         CollectionUtils.subtract(a, b)(A与B的差): {1,2,3}
+         CollectionUtils.subtract(b, a)(B与A的差): {4,6,7}
+         */
+    }
+
 
     public static List<User> getUsers(){
         List<User> users = new ArrayList<>();
